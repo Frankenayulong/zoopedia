@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3034E6491F52E6CF00E8AA89 /* DictionaryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3034E6481F52E6CF00E8AA89 /* DictionaryController.swift */; };
+		3034E64D1F52E79900E8AA89 /* Animals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3034E64C1F52E79900E8AA89 /* Animals.swift */; };
+		3034E64F1F52E9FF00E8AA89 /* DictionaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3034E64E1F52E9FF00E8AA89 /* DictionaryCell.swift */; };
 		303967C81F4C0FB700BF4DC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303967C71F4C0FB700BF4DC4 /* AppDelegate.swift */; };
 		303967CA1F4C0FB700BF4DC4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303967C91F4C0FB700BF4DC4 /* ViewController.swift */; };
 		303967CD1F4C0FB700BF4DC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 303967CB1F4C0FB700BF4DC4 /* Main.storyboard */; };
@@ -34,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3034E6481F52E6CF00E8AA89 /* DictionaryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryController.swift; sourceTree = "<group>"; };
+		3034E64C1F52E79900E8AA89 /* Animals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animals.swift; sourceTree = "<group>"; };
+		3034E64E1F52E9FF00E8AA89 /* DictionaryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryCell.swift; sourceTree = "<group>"; };
 		303967C41F4C0FB600BF4DC4 /* zoopedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zoopedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		303967C71F4C0FB700BF4DC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		303967C91F4C0FB700BF4DC4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +80,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3019BAB41F52AF52008626BB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				303967C91F4C0FB700BF4DC4 /* ViewController.swift */,
+				3034E6481F52E6CF00E8AA89 /* DictionaryController.swift */,
+				3034E64E1F52E9FF00E8AA89 /* DictionaryCell.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		3019BAB51F52AF5D008626BB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				303967CB1F4C0FB700BF4DC4 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		3019BAB61F52AF64008626BB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				303967C71F4C0FB700BF4DC4 /* AppDelegate.swift */,
+				303967CE1F4C0FB700BF4DC4 /* Assets.xcassets */,
+				303967D01F4C0FB700BF4DC4 /* LaunchScreen.storyboard */,
+				303967D31F4C0FB700BF4DC4 /* Info.plist */,
+				3034E64C1F52E79900E8AA89 /* Animals.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		303967BB1F4C0FB600BF4DC4 = {
 			isa = PBXGroup;
 			children = (
@@ -97,12 +133,9 @@
 		303967C61F4C0FB600BF4DC4 /* zoopedia */ = {
 			isa = PBXGroup;
 			children = (
-				303967C71F4C0FB700BF4DC4 /* AppDelegate.swift */,
-				303967C91F4C0FB700BF4DC4 /* ViewController.swift */,
-				303967CB1F4C0FB700BF4DC4 /* Main.storyboard */,
-				303967CE1F4C0FB700BF4DC4 /* Assets.xcassets */,
-				303967D01F4C0FB700BF4DC4 /* LaunchScreen.storyboard */,
-				303967D31F4C0FB700BF4DC4 /* Info.plist */,
+				3019BAB61F52AF64008626BB /* Model */,
+				3019BAB51F52AF5D008626BB /* View */,
+				3019BAB41F52AF52008626BB /* Controller */,
 			);
 			path = zoopedia;
 			sourceTree = "<group>";
@@ -260,6 +293,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				303967CA1F4C0FB700BF4DC4 /* ViewController.swift in Sources */,
+				3034E64D1F52E79900E8AA89 /* Animals.swift in Sources */,
+				3034E64F1F52E9FF00E8AA89 /* DictionaryCell.swift in Sources */,
+				3034E6491F52E6CF00E8AA89 /* DictionaryController.swift in Sources */,
 				303967C81F4C0FB700BF4DC4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -507,6 +543,7 @@
 				303967EE1F4C0FB700BF4DC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		303967EF1F4C0FB700BF4DC4 /* Build configuration list for PBXNativeTarget "zoopediaTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +552,7 @@
 				303967F11F4C0FB700BF4DC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		303967F21F4C0FB700BF4DC4 /* Build configuration list for PBXNativeTarget "zoopediaUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +561,7 @@
 				303967F41F4C0FB700BF4DC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
