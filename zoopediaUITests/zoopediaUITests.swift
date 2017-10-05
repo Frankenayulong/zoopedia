@@ -69,4 +69,13 @@ class zoopediaUITests: XCTestCase {
         XCTAssertTrue(app.staticTexts["QUIZ"].exists)
     }
     
+    func testHowToPlay() {
+        let app = XCUIApplication()
+        app.buttons.element(matching:.any,identifier:"home_howButton").tap()
+        XCTAssertEqual(app.images.count, 1)
+        XCTAssertEqual(app.buttons.count, 1)
+        XCTAssertEqual(app.staticTexts.count, 1)
+        XCTAssertTrue(app.staticTexts["HOW TO PLAY"].exists)
+    }
+    
 }
