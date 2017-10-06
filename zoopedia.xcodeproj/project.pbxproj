@@ -17,6 +17,14 @@
 		303967D21F4C0FB700BF4DC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 303967D01F4C0FB700BF4DC4 /* LaunchScreen.storyboard */; };
 		303967DD1F4C0FB700BF4DC4 /* zoopediaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303967DC1F4C0FB700BF4DC4 /* zoopediaTests.swift */; };
 		303967E81F4C0FB700BF4DC4 /* zoopediaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303967E71F4C0FB700BF4DC4 /* zoopediaUITests.swift */; };
+		603FC65F257338EAB03B9DDE /* Pods_zoopediaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC397D41DD7D2C1896EEA900 /* Pods_zoopediaTests.framework */; };
+		6733011C5179976224B9B861 /* Pods_zoopediaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DB8360389E51A2EDFB7B61C /* Pods_zoopediaUITests.framework */; };
+		6CA0E62D7C9833B2FF6B3303 /* Pods_zoopedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8615E97E12922D9B6A6672C5 /* Pods_zoopedia.framework */; };
+		EE08C15E1F8750CD004C436A /* Animals.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EE08C15C1F8750CD004C436A /* Animals.xcdatamodeld */; };
+		EE08C1611F8751FB004C436A /* Animal+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE08C15F1F8751FB004C436A /* Animal+CoreDataClass.swift */; };
+		EE08C1621F8751FB004C436A /* Animal+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE08C1601F8751FB004C436A /* Animal+CoreDataProperties.swift */; };
+		EE08C1641F87521F004C436A /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE08C1631F87521F004C436A /* AppData.swift */; };
+		EE08C1661F87555B004C436A /* Requester.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE08C1651F87555B004C436A /* Requester.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D7B34BDAE5E4D7152B7F174 /* Pods-zoopedia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zoopedia.debug.xcconfig"; path = "Pods/Target Support Files/Pods-zoopedia/Pods-zoopedia.debug.xcconfig"; sourceTree = "<group>"; };
+		1242E68E511B690C449E8566 /* Pods-zoopedia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zoopedia.release.xcconfig"; path = "Pods/Target Support Files/Pods-zoopedia/Pods-zoopedia.release.xcconfig"; sourceTree = "<group>"; };
 		3034E6481F52E6CF00E8AA89 /* DictionaryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryController.swift; sourceTree = "<group>"; };
 		3034E64C1F52E79900E8AA89 /* Animals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animals.swift; sourceTree = "<group>"; };
 		3034E64E1F52E9FF00E8AA89 /* DictionaryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryCell.swift; sourceTree = "<group>"; };
@@ -53,6 +63,18 @@
 		303967E31F4C0FB700BF4DC4 /* zoopediaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = zoopediaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		303967E71F4C0FB700BF4DC4 /* zoopediaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zoopediaUITests.swift; sourceTree = "<group>"; };
 		303967E91F4C0FB700BF4DC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4324EBC4FF2D19A43E3A52ED /* Pods-zoopediaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zoopediaUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-zoopediaUITests/Pods-zoopediaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4DB8360389E51A2EDFB7B61C /* Pods_zoopediaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_zoopediaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F0EF07E2A0B6ED823B1D06D /* Pods-zoopediaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zoopediaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-zoopediaTests/Pods-zoopediaTests.release.xcconfig"; sourceTree = "<group>"; };
+		8615E97E12922D9B6A6672C5 /* Pods_zoopedia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_zoopedia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F0653E5D0C1EE52CBF52D47 /* Pods-zoopediaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zoopediaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-zoopediaUITests/Pods-zoopediaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		AC397D41DD7D2C1896EEA900 /* Pods_zoopediaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_zoopediaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE08C15D1F8750CD004C436A /* Animals.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Animals.xcdatamodel; sourceTree = "<group>"; };
+		EE08C15F1F8751FB004C436A /* Animal+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Animal+CoreDataClass.swift"; sourceTree = "<group>"; };
+		EE08C1601F8751FB004C436A /* Animal+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Animal+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		EE08C1631F87521F004C436A /* AppData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
+		EE08C1651F87555B004C436A /* Requester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Requester.swift; sourceTree = "<group>"; };
+		F5681C29EC95D2523D84B0FE /* Pods-zoopediaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zoopediaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-zoopediaTests/Pods-zoopediaTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CA0E62D7C9833B2FF6B3303 /* Pods_zoopedia.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				603FC65F257338EAB03B9DDE /* Pods_zoopediaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,12 +98,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6733011C5179976224B9B861 /* Pods_zoopediaUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		013E2F7E3AB3FE076553E25B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0D7B34BDAE5E4D7152B7F174 /* Pods-zoopedia.debug.xcconfig */,
+				1242E68E511B690C449E8566 /* Pods-zoopedia.release.xcconfig */,
+				F5681C29EC95D2523D84B0FE /* Pods-zoopediaTests.debug.xcconfig */,
+				6F0EF07E2A0B6ED823B1D06D /* Pods-zoopediaTests.release.xcconfig */,
+				4324EBC4FF2D19A43E3A52ED /* Pods-zoopediaUITests.debug.xcconfig */,
+				9F0653E5D0C1EE52CBF52D47 /* Pods-zoopediaUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		147D3773B3471DAF1BFFF7DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8615E97E12922D9B6A6672C5 /* Pods_zoopedia.framework */,
+				AC397D41DD7D2C1896EEA900 /* Pods_zoopediaTests.framework */,
+				4DB8360389E51A2EDFB7B61C /* Pods_zoopediaUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3019BAB41F52AF52008626BB /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -101,11 +149,16 @@
 		3019BAB61F52AF64008626BB /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EE08C15F1F8751FB004C436A /* Animal+CoreDataClass.swift */,
+				EE08C1601F8751FB004C436A /* Animal+CoreDataProperties.swift */,
 				303967C71F4C0FB700BF4DC4 /* AppDelegate.swift */,
 				303967CE1F4C0FB700BF4DC4 /* Assets.xcassets */,
 				303967D01F4C0FB700BF4DC4 /* LaunchScreen.storyboard */,
 				303967D31F4C0FB700BF4DC4 /* Info.plist */,
 				3034E64C1F52E79900E8AA89 /* Animals.swift */,
+				EE08C15C1F8750CD004C436A /* Animals.xcdatamodeld */,
+				EE08C1631F87521F004C436A /* AppData.swift */,
+				EE08C1651F87555B004C436A /* Requester.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -117,6 +170,8 @@
 				303967DB1F4C0FB700BF4DC4 /* zoopediaTests */,
 				303967E61F4C0FB700BF4DC4 /* zoopediaUITests */,
 				303967C51F4C0FB600BF4DC4 /* Products */,
+				013E2F7E3AB3FE076553E25B /* Pods */,
+				147D3773B3471DAF1BFFF7DF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -165,9 +220,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 303967EC1F4C0FB700BF4DC4 /* Build configuration list for PBXNativeTarget "zoopedia" */;
 			buildPhases = (
+				2398F104301D9339A8DEB687 /* [CP] Check Pods Manifest.lock */,
 				303967C01F4C0FB600BF4DC4 /* Sources */,
 				303967C11F4C0FB600BF4DC4 /* Frameworks */,
 				303967C21F4C0FB600BF4DC4 /* Resources */,
+				3469EBA5955DFC1696FFF6DD /* [CP] Embed Pods Frameworks */,
+				2C512104E33D1FD5E31784B3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -182,9 +240,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 303967EF1F4C0FB700BF4DC4 /* Build configuration list for PBXNativeTarget "zoopediaTests" */;
 			buildPhases = (
+				41C658B5878892665C5FD2D7 /* [CP] Check Pods Manifest.lock */,
 				303967D41F4C0FB700BF4DC4 /* Sources */,
 				303967D51F4C0FB700BF4DC4 /* Frameworks */,
 				303967D61F4C0FB700BF4DC4 /* Resources */,
+				9F60F890D4966F3C1AC6EEA7 /* [CP] Embed Pods Frameworks */,
+				FF34AFA834B254298F53A59A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -200,9 +261,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 303967F21F4C0FB700BF4DC4 /* Build configuration list for PBXNativeTarget "zoopediaUITests" */;
 			buildPhases = (
+				C5A3FE702788BD779F9ED48F /* [CP] Check Pods Manifest.lock */,
 				303967DF1F4C0FB700BF4DC4 /* Sources */,
 				303967E01F4C0FB700BF4DC4 /* Frameworks */,
 				303967E11F4C0FB700BF4DC4 /* Resources */,
+				A26F1EC655F8ECCD9C175B8D /* [CP] Embed Pods Frameworks */,
+				6C2012BAB06B26AF49722511 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -287,6 +351,163 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2398F104301D9339A8DEB687 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-zoopedia-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2C512104E33D1FD5E31784B3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-zoopedia/Pods-zoopedia-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-zoopedia/Pods-zoopedia-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3469EBA5955DFC1696FFF6DD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-zoopedia/Pods-zoopedia-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Material/Material.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Material.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-zoopedia/Pods-zoopedia-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		41C658B5878892665C5FD2D7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-zoopediaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C2012BAB06B26AF49722511 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-zoopediaUITests/Pods-zoopediaUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F60F890D4966F3C1AC6EEA7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-zoopediaTests/Pods-zoopediaTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A26F1EC655F8ECCD9C175B8D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-zoopediaUITests/Pods-zoopediaUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5A3FE702788BD779F9ED48F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-zoopediaUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF34AFA834B254298F53A59A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-zoopediaTests/Pods-zoopediaTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		303967C01F4C0FB600BF4DC4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -295,8 +516,13 @@
 				303967CA1F4C0FB700BF4DC4 /* ViewController.swift in Sources */,
 				3034E64D1F52E79900E8AA89 /* Animals.swift in Sources */,
 				3034E64F1F52E9FF00E8AA89 /* DictionaryCell.swift in Sources */,
+				EE08C1611F8751FB004C436A /* Animal+CoreDataClass.swift in Sources */,
+				EE08C15E1F8750CD004C436A /* Animals.xcdatamodeld in Sources */,
 				3034E6491F52E6CF00E8AA89 /* DictionaryController.swift in Sources */,
 				303967C81F4C0FB700BF4DC4 /* AppDelegate.swift in Sources */,
+				EE08C1621F8751FB004C436A /* Animal+CoreDataProperties.swift in Sources */,
+				EE08C1661F87555B004C436A /* Requester.swift in Sources */,
+				EE08C1641F87521F004C436A /* AppData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,6 +674,7 @@
 		};
 		303967ED1F4C0FB700BF4DC4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D7B34BDAE5E4D7152B7F174 /* Pods-zoopedia.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = zoopedia/Info.plist;
@@ -460,6 +687,7 @@
 		};
 		303967EE1F4C0FB700BF4DC4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1242E68E511B690C449E8566 /* Pods-zoopedia.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = zoopedia/Info.plist;
@@ -472,6 +700,7 @@
 		};
 		303967F01F4C0FB700BF4DC4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5681C29EC95D2523D84B0FE /* Pods-zoopediaTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -486,6 +715,7 @@
 		};
 		303967F11F4C0FB700BF4DC4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F0EF07E2A0B6ED823B1D06D /* Pods-zoopediaTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -500,6 +730,7 @@
 		};
 		303967F31F4C0FB700BF4DC4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4324EBC4FF2D19A43E3A52ED /* Pods-zoopediaUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = zoopediaUITests/Info.plist;
@@ -513,6 +744,7 @@
 		};
 		303967F41F4C0FB700BF4DC4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F0653E5D0C1EE52CBF52D47 /* Pods-zoopediaUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = zoopediaUITests/Info.plist;
@@ -564,6 +796,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EE08C15C1F8750CD004C436A /* Animals.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EE08C15D1F8750CD004C436A /* Animals.xcdatamodel */,
+			);
+			currentVersion = EE08C15D1F8750CD004C436A /* Animals.xcdatamodel */;
+			path = Animals.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 303967BC1F4C0FB600BF4DC4 /* Project object */;
 }

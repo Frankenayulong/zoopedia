@@ -7,21 +7,22 @@
 //
 
 import Foundation
-
+import CoreData
 class Animals {
-    var animals:[Animal] = []
+    var animals:[SAnimal] = []
     
     /* LIST OF ANIMALS */
     init() {
-        animals.append(Animal(name:"Buffalo", image:"buffalo", desc:"Eats grass"))
+        animals.append(SAnimal(name:"Buffalo", image:"buffalo", desc:"Eats grass"))
+        
     }
     
-    func getAll()->[Animal] {
+    func getAll()->[SAnimal] {
         return animals
     }
 }
 
-class Animal {
+class SAnimal {
     var name:String = ""
     var image:String = ""
     var desc:String = ""
