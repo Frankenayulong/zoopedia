@@ -1,0 +1,6 @@
+framework module Pods_zoopedia {
+  umbrella header "Pods-zoopedia-umbrella.h"
+
+  export *
+  module * { export * }
+}
