@@ -9,6 +9,7 @@
 import Foundation
 import CoreData
 import UIKit
+
 class AppData {
     static let sharedInstance = AppData()
     private init()
@@ -27,16 +28,28 @@ class AppData {
     
     func getAnimal(_ indexPath: IndexPath) -> AnimalDB
     {
-        return animaldb[indexPath.row]
+        for animal in animaldb {
+            if animal.id == Int32(indexPath.row) {
+                return animal
+            }
+        }
+        return animaldb[0]
     }
     
     // MARK: - CRUD
     
-    func saveAnimal(id: Int, name:String, desc: String, question: String, choice1: String, choice2: String, choice3:String,choice4:String,image_url:String,correct_ans:String, existing: AnimalDB?)
+    func saveAnswer(answer:String, existing:AnimalDB){
+        existing.answer = answer
+        existing.answered = true
+        print("\(existing.id)")
+        updateDatabase()
+    }
+    
+    func saveAnimal(id: Int, name:String, desc: String, question: String, choice1: String, choice2: String, choice3:String,choice4:String,image_url:String,correct_ans:String, answer:String="", answered:Bool=false, latitude:Double=0, longitude:Double=0, existing: AnimalDB?=nil)
     {
         // Create a new managed object and insert it into the context, so it can be saved
         // into the database
-        let entity =  NSEntityDescription.entity(forEntityName: "Animal",
+        let entity =  NSEntityDescription.entity(forEntityName: "AnimalDB",
                                                  in:managedContext)
         
         // Update the existing object with the data passed in from the View Controller
@@ -51,6 +64,11 @@ class AppData {
             existing!.choice3 = choice3
             existing!.choice4 = choice4
             existing!.image_url = image_url
+            existing!.answer = answer
+            existing!.answered = answered
+            existing!.correct_answer = correct_ans
+            existing!.latitude = latitude
+            existing!.longitude = longitude
         }
             // Create a new movie object and update it with the data passed in from the View Controller
         else
@@ -67,16 +85,21 @@ class AppData {
             animal.choice3 = choice3
             animal.choice4 = choice4
             animal.image_url = image_url
+            animal.answer = answer
+            animal.answered = answered
+            animal.correct_answer = correct_ans
+            animal.latitude = latitude
+            animal.longitude = longitude
         }
         
         updateDatabase()
     }
     
-    func getMovies()
+    func getAnimals()
     {
         do
         {
-            let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName:"Animal")
+            let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName:"AnimalDB")
             
             let results =
                 try managedContext.fetch(fetchRequest)
@@ -89,10 +112,17 @@ class AppData {
     }
     
     
-    func deleteMovie(_ animal: AnimalDB)
+    func deleteAnimal(_ animal: AnimalDB)
     {
         managedContext.delete(animal)
         updateDatabase()
+    }
+    
+    func deleteAnimals(){
+        self.getAnimals()
+        for animal:AnimalDB in animaldb {
+            self.deleteAnimal(animal)
+        }
     }
     
     
@@ -105,6 +135,7 @@ class AppData {
         do
         {
             try managedContext.save()
+            print("saved!")
         }
         catch let error as NSError
         {

@@ -1,5 +1,5 @@
 //
-//  Animal+CoreDataProperties.swift
+//  AnimalDB+CoreDataProperties.swift
 //  zoopedia
 //
 //  Created by Kendrick on 6/10/17.
@@ -13,7 +13,7 @@ import CoreData
 extension AnimalDB {
 
     @nonobjc public class func fetchRequest() -> NSFetchRequest<AnimalDB> {
-        return NSFetchRequest<AnimalDB>(entityName: "Animal")
+        return NSFetchRequest<AnimalDB>(entityName: "AnimalDB")
     }
 
     @NSManaged public var id: Int32
@@ -26,5 +26,9 @@ extension AnimalDB {
     @NSManaged public var choice4: String?
     @NSManaged public var correct_answer: String?
     @NSManaged public var image_url: String?
+    @NSManaged public var answer: String?
+    @NSManaged public var answered: Bool
+    @NSManaged public var latitude: Double
+    @NSManaged public var longitude: Double
 
 }

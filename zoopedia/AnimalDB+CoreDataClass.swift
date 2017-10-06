@@ -1,5 +1,5 @@
 //
-//  Animal+CoreDataClass.swift
+//  AnimalDB+CoreDataClass.swift
 //  zoopedia
 //
 //  Created by Kendrick on 6/10/17.

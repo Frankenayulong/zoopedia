@@ -10,14 +10,17 @@ import UIKit
 
 class DictionaryController: UIViewController {
 
-    var animals:Animals = Animals()
     @IBOutlet weak var tbl:UITableView?
     
-    
+    @IBAction func back(){
+        self.dismiss(animated: true, completion: nil)
+    }
+    var id:Int32?
     override func viewDidLoad() {
         super.viewDidLoad()
         tbl?.dataSource = self
         tbl?.delegate = self
+        AppData.sharedInstance.getAnimals()
         // Do any additional setup after loading the view.
     }
 
@@ -26,16 +29,14 @@ class DictionaryController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any!) {
+        
+        if segue.identifier == "tabletodetail" {
+            let destinationVC = segue.destination as! DescriptionViewController
+            destinationVC.id = self.id
+        }
     }
-    */
 
 }
 
@@ -43,9 +44,8 @@ class DictionaryController: UIViewController {
 extension DictionaryController: UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("selected")
-//        let selectedProperty = self.properties.getProperty(byIndex: indexPath.row)
-//        self.delegate?.propertySelected(newProperty: selectedProperty)
-//        splitViewController?.showDetailViewController(appDelegate.propertyDetailViewController, sender: nil)
+        self.id = AppData.sharedInstance.getAnimal(IndexPath(row:indexPath.row + 1, section:0)).id
+        performSegue(withIdentifier: "tabletodetail", sender: self)
     }
 }
 
@@ -53,14 +53,14 @@ extension DictionaryController: UITableViewDelegate{
 extension DictionaryController: UITableViewDataSource{
     /* NUMBER OF ROWS */
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.animals.getAll().count
+        return AppData.sharedInstance.animaldb.count
     }
     /* DISPLAY ROW */
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell:DictionaryCell = tableView.dequeueReusableCell(withIdentifier: "DictionaryCell") as? DictionaryCell else {return DictionaryCell()}
-        let animal = self.animals.getAll()[indexPath.row]
-        cell.img?.image = UIImage(named:animal.getImage())
-        cell.title?.text = animal.getName()
+        let animal = AppData.sharedInstance.getAnimal(IndexPath(row:indexPath.row + 1, section:0))
+        cell.img?.downloadedFrom(link: animal.image_url!, contentMode: .scaleAspectFill)
+        cell.title?.text = animal.name
         return cell
     }
 }

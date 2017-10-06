@@ -20,11 +20,16 @@
 		603FC65F257338EAB03B9DDE /* Pods_zoopediaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC397D41DD7D2C1896EEA900 /* Pods_zoopediaTests.framework */; };
 		6733011C5179976224B9B861 /* Pods_zoopediaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DB8360389E51A2EDFB7B61C /* Pods_zoopediaUITests.framework */; };
 		6CA0E62D7C9833B2FF6B3303 /* Pods_zoopedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8615E97E12922D9B6A6672C5 /* Pods_zoopedia.framework */; };
-		EE08C15E1F8750CD004C436A /* Animals.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EE08C15C1F8750CD004C436A /* Animals.xcdatamodeld */; };
-		EE08C1611F8751FB004C436A /* Animal+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE08C15F1F8751FB004C436A /* Animal+CoreDataClass.swift */; };
-		EE08C1621F8751FB004C436A /* Animal+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE08C1601F8751FB004C436A /* Animal+CoreDataProperties.swift */; };
+		EE08C15E1F8750CD004C436A /* zoopedia.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EE08C15C1F8750CD004C436A /* zoopedia.xcdatamodeld */; };
 		EE08C1641F87521F004C436A /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE08C1631F87521F004C436A /* AppData.swift */; };
 		EE08C1661F87555B004C436A /* Requester.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE08C1651F87555B004C436A /* Requester.swift */; };
+		EE08C1681F875B33004C436A /* SelectLevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE08C1671F875B33004C436A /* SelectLevelViewController.swift */; };
+		EE08C16A1F875B3E004C436A /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE08C1691F875B3E004C436A /* QuizViewController.swift */; };
+		EE08C1751F8767FB004C436A /* AnimalDB+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE08C1731F8767FB004C436A /* AnimalDB+CoreDataClass.swift */; };
+		EE08C1761F8767FB004C436A /* AnimalDB+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE08C1741F8767FB004C436A /* AnimalDB+CoreDataProperties.swift */; };
+		EE08C1781F87769C004C436A /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE08C1771F87769C004C436A /* MenuViewController.swift */; };
+		EE08C17A1F878407004C436A /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE08C1791F878407004C436A /* DescriptionViewController.swift */; };
+		EE08C17C1F878BA2004C436A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE08C17B1F878BA2004C436A /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,11 +74,16 @@
 		8615E97E12922D9B6A6672C5 /* Pods_zoopedia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_zoopedia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F0653E5D0C1EE52CBF52D47 /* Pods-zoopediaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zoopediaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-zoopediaUITests/Pods-zoopediaUITests.release.xcconfig"; sourceTree = "<group>"; };
 		AC397D41DD7D2C1896EEA900 /* Pods_zoopediaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_zoopediaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EE08C15D1F8750CD004C436A /* Animals.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Animals.xcdatamodel; sourceTree = "<group>"; };
-		EE08C15F1F8751FB004C436A /* Animal+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Animal+CoreDataClass.swift"; sourceTree = "<group>"; };
-		EE08C1601F8751FB004C436A /* Animal+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Animal+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		EE08C15D1F8750CD004C436A /* zoopedia.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = zoopedia.xcdatamodel; sourceTree = "<group>"; };
 		EE08C1631F87521F004C436A /* AppData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
 		EE08C1651F87555B004C436A /* Requester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Requester.swift; sourceTree = "<group>"; };
+		EE08C1671F875B33004C436A /* SelectLevelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectLevelViewController.swift; sourceTree = "<group>"; };
+		EE08C1691F875B3E004C436A /* QuizViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		EE08C1731F8767FB004C436A /* AnimalDB+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AnimalDB+CoreDataClass.swift"; sourceTree = "<group>"; };
+		EE08C1741F8767FB004C436A /* AnimalDB+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AnimalDB+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		EE08C1771F87769C004C436A /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		EE08C1791F878407004C436A /* DescriptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescriptionViewController.swift; sourceTree = "<group>"; };
+		EE08C17B1F878BA2004C436A /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		F5681C29EC95D2523D84B0FE /* Pods-zoopediaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zoopediaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-zoopediaTests/Pods-zoopediaTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -134,6 +144,11 @@
 				303967C91F4C0FB700BF4DC4 /* ViewController.swift */,
 				3034E6481F52E6CF00E8AA89 /* DictionaryController.swift */,
 				3034E64E1F52E9FF00E8AA89 /* DictionaryCell.swift */,
+				EE08C1671F875B33004C436A /* SelectLevelViewController.swift */,
+				EE08C1691F875B3E004C436A /* QuizViewController.swift */,
+				EE08C1771F87769C004C436A /* MenuViewController.swift */,
+				EE08C1791F878407004C436A /* DescriptionViewController.swift */,
+				EE08C17B1F878BA2004C436A /* MapViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -149,14 +164,14 @@
 		3019BAB61F52AF64008626BB /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				EE08C15F1F8751FB004C436A /* Animal+CoreDataClass.swift */,
-				EE08C1601F8751FB004C436A /* Animal+CoreDataProperties.swift */,
+				EE08C1731F8767FB004C436A /* AnimalDB+CoreDataClass.swift */,
+				EE08C1741F8767FB004C436A /* AnimalDB+CoreDataProperties.swift */,
 				303967C71F4C0FB700BF4DC4 /* AppDelegate.swift */,
 				303967CE1F4C0FB700BF4DC4 /* Assets.xcassets */,
 				303967D01F4C0FB700BF4DC4 /* LaunchScreen.storyboard */,
 				303967D31F4C0FB700BF4DC4 /* Info.plist */,
 				3034E64C1F52E79900E8AA89 /* Animals.swift */,
-				EE08C15C1F8750CD004C436A /* Animals.xcdatamodeld */,
+				EE08C15C1F8750CD004C436A /* zoopedia.xcdatamodeld */,
 				EE08C1631F87521F004C436A /* AppData.swift */,
 				EE08C1651F87555B004C436A /* Requester.swift */,
 			);
@@ -397,12 +412,14 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-zoopedia/Pods-zoopedia-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Material/Material.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftSpinner/SwiftSpinner.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Material.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSpinner.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -514,15 +531,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				303967CA1F4C0FB700BF4DC4 /* ViewController.swift in Sources */,
+				EE08C17A1F878407004C436A /* DescriptionViewController.swift in Sources */,
 				3034E64D1F52E79900E8AA89 /* Animals.swift in Sources */,
 				3034E64F1F52E9FF00E8AA89 /* DictionaryCell.swift in Sources */,
-				EE08C1611F8751FB004C436A /* Animal+CoreDataClass.swift in Sources */,
-				EE08C15E1F8750CD004C436A /* Animals.xcdatamodeld in Sources */,
+				EE08C16A1F875B3E004C436A /* QuizViewController.swift in Sources */,
+				EE08C15E1F8750CD004C436A /* zoopedia.xcdatamodeld in Sources */,
+				EE08C1761F8767FB004C436A /* AnimalDB+CoreDataProperties.swift in Sources */,
 				3034E6491F52E6CF00E8AA89 /* DictionaryController.swift in Sources */,
+				EE08C1781F87769C004C436A /* MenuViewController.swift in Sources */,
+				EE08C1681F875B33004C436A /* SelectLevelViewController.swift in Sources */,
 				303967C81F4C0FB700BF4DC4 /* AppDelegate.swift in Sources */,
-				EE08C1621F8751FB004C436A /* Animal+CoreDataProperties.swift in Sources */,
 				EE08C1661F87555B004C436A /* Requester.swift in Sources */,
 				EE08C1641F87521F004C436A /* AppData.swift in Sources */,
+				EE08C17C1F878BA2004C436A /* MapViewController.swift in Sources */,
+				EE08C1751F8767FB004C436A /* AnimalDB+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -798,13 +820,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		EE08C15C1F8750CD004C436A /* Animals.xcdatamodeld */ = {
+		EE08C15C1F8750CD004C436A /* zoopedia.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				EE08C15D1F8750CD004C436A /* Animals.xcdatamodel */,
+				EE08C15D1F8750CD004C436A /* zoopedia.xcdatamodel */,
 			);
-			currentVersion = EE08C15D1F8750CD004C436A /* Animals.xcdatamodel */;
-			path = Animals.xcdatamodeld;
+			currentVersion = EE08C15D1F8750CD004C436A /* zoopedia.xcdatamodel */;
+			path = zoopedia.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

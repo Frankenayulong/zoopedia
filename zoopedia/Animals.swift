@@ -26,11 +26,16 @@ class SAnimal {
     var name:String = ""
     var image:String = ""
     var desc:String = ""
+    var answered: Bool = false
     
     init (name:String, image:String, desc:String) {
         self.name = name;
         self.image = image;
         self.desc = desc;
+    }
+    
+    func getAnswered()->Bool{
+        return self.answered
     }
     
     func getName()->String {
@@ -41,6 +46,10 @@ class SAnimal {
     }
     func getDesc()->String {
         return self.desc;
+    }
+    
+    func setAnswered(_ answered:Bool){
+        self.answered = answered
     }
     
 }
