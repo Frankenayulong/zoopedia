@@ -2,7 +2,7 @@
 //  DictionaryController.swift
 //  zoopedia
 //
-//  Created by Fajar on 8/27/17.
+//  Created by Nadya on 8/27/17.
 //  Copyright © 2017 Nadya. All rights reserved.
 //
 

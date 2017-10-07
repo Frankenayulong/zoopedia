@@ -2,7 +2,7 @@
 //  MapViewController.swift
 //  zoopedia
 //
-//  Created by Kendrick on 6/10/17.
+//  Created by Nadya on 6/10/17.
 //  Copyright © 2017 Nadya. All rights reserved.
 //
 
@@ -17,7 +17,7 @@ class MapViewController: UIViewController {
         super.viewDidLoad()
         AppData.sharedInstance.getAnimals()
         self.animal = AppData.sharedInstance.getAnimal(IndexPath(row:Int(id!), section:0))
-        let camera = GMSCameraPosition.camera(withLatitude: animal?.latitude ?? 4.739001, longitude: animal?.longitude ?? -74.059616, zoom: 13)
+        let camera = GMSCameraPosition.camera(withLatitude: animal?.latitude ?? 4.739001, longitude: animal?.longitude ?? -74.059616, zoom: 6)
         map?.camera = camera
         let marker = GMSMarker()
         marker.position = CLLocationCoordinate2DMake(animal?.latitude ?? 4.739001, animal?.longitude ?? -74.059616)

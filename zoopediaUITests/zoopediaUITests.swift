@@ -2,7 +2,7 @@
 //  zoopediaUITests.swift
 //  zoopediaUITests
 //
-//  Created by Fajar on 8/22/17.
+//  Created by Nadya on 8/22/17.
 //  Copyright © 2017 Nadya. All rights reserved.
 //
 

@@ -2,7 +2,7 @@
 //  AnimalDB+CoreDataProperties.swift
 //  zoopedia
 //
-//  Created by Kendrick on 6/10/17.
+//  Created by Nadya on 6/10/17.
 //  Copyright © 2017 Nadya. All rights reserved.
 //
 

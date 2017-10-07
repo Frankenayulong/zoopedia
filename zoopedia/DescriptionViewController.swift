@@ -2,7 +2,7 @@
 //  DescriptionViewController.swift
 //  zoopedia
 //
-//  Created by Kendrick on 6/10/17.
+//  Created by Nadya on 6/10/17.
 //  Copyright © 2017 Nadya. All rights reserved.
 //
 
@@ -16,6 +16,8 @@ class DescriptionViewController: UIViewController {
     @IBOutlet weak var image:UIImageView?
     @IBOutlet weak var desc: UILabel?
     @IBOutlet weak var locateBtn: UIButton?
+    @IBOutlet weak var imageLandscape:UIImageView?
+    @IBOutlet weak var descLandscape:UILabel?
     
     @IBAction func toMap(){
         performSegue(withIdentifier: "detailtomap", sender: self)
@@ -38,7 +40,9 @@ class DescriptionViewController: UIViewController {
         AppData.sharedInstance.getAnimals()
         self.animal = AppData.sharedInstance.getAnimal(IndexPath(row:Int(id!), section:0))
         image?.downloadedFrom(link: (animal?.image_url)!, contentMode: .scaleAspectFill)
+        imageLandscape?.downloadedFrom(link: (animal?.image_url)!, contentMode: .scaleAspectFill)
         desc?.text = animal?.desc
+        descLandscape?.text = animal?.desc
         // Do any additional setup after loading the view.
     }
 

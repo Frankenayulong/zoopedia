@@ -2,7 +2,7 @@
 //  QuizViewController.swift
 //  zoopedia
 //
-//  Created by Kendrick on 6/10/17.
+//  Created by Nadya on 6/10/17.
 //  Copyright © 2017 Nadya. All rights reserved.
 //
 
@@ -104,42 +104,42 @@ class QuizViewController: UIViewController {
         self.choice2?.title = animal?.choice2
         self.choice3?.title = animal?.choice3
         self.choice4?.title = animal?.choice4
-        if (animal?.answered)! {
-            disableAllButtons()
-            if animal?.answer == animal?.correct_answer {
-                if animal?.choice1 == animal?.answer {
-                    choice1?.backgroundColor = Color.green.darken2
-                    choice1?.titleColor = Color.white
-                }else if animal?.choice2 == animal?.answer {
-                    choice2?.backgroundColor = Color.green.darken2
-                    choice2?.titleColor = Color.white
-                }else if animal?.choice3 == animal?.answer {
-                    choice3?.backgroundColor = Color.green.darken2
-                    choice3?.titleColor = Color.white
-                }else if animal?.choice4 == animal?.answer {
-                    choice4?.backgroundColor = Color.green.darken2
-                    choice4?.titleColor = Color.white
-                }
-                statusLabel?.text = "Correct!"
-                statusLabel?.textColor = Color.green.darken2
-            }else{
-                if animal?.choice1 == animal?.answer {
-                    choice1?.backgroundColor = Color.red.darken2
-                    choice1?.titleColor = Color.white
-                }else if animal?.choice2 == animal?.answer {
-                    choice2?.backgroundColor = Color.red.darken2
-                    choice2?.titleColor = Color.white
-                }else if animal?.choice3 == animal?.answer {
-                    choice3?.backgroundColor = Color.red.darken2
-                    choice3?.titleColor = Color.white
-                }else if animal?.choice4 == animal?.answer {
-                    choice4?.backgroundColor = Color.red.darken2
-                    choice4?.titleColor = Color.white
-                }
-                statusLabel?.text = "Incorrect!"
-                statusLabel?.textColor = Color.red.darken2
-            }
-        }
+//        if (animal?.answered)! {
+//            disableAllButtons()
+//            if animal?.answer == animal?.correct_answer {
+//                if animal?.choice1 == animal?.answer {
+//                    choice1?.backgroundColor = Color.green.darken2
+//                    choice1?.titleColor = Color.white
+//                }else if animal?.choice2 == animal?.answer {
+//                    choice2?.backgroundColor = Color.green.darken2
+//                    choice2?.titleColor = Color.white
+//                }else if animal?.choice3 == animal?.answer {
+//                    choice3?.backgroundColor = Color.green.darken2
+//                    choice3?.titleColor = Color.white
+//                }else if animal?.choice4 == animal?.answer {
+//                    choice4?.backgroundColor = Color.green.darken2
+//                    choice4?.titleColor = Color.white
+//                }
+//                statusLabel?.text = "Correct!"
+//                statusLabel?.textColor = Color.green.darken2
+//            }else{
+//                if animal?.choice1 == animal?.answer {
+//                    choice1?.backgroundColor = Color.red.darken2
+//                    choice1?.titleColor = Color.white
+//                }else if animal?.choice2 == animal?.answer {
+//                    choice2?.backgroundColor = Color.red.darken2
+//                    choice2?.titleColor = Color.white
+//                }else if animal?.choice3 == animal?.answer {
+//                    choice3?.backgroundColor = Color.red.darken2
+//                    choice3?.titleColor = Color.white
+//                }else if animal?.choice4 == animal?.answer {
+//                    choice4?.backgroundColor = Color.red.darken2
+//                    choice4?.titleColor = Color.white
+//                }
+//                statusLabel?.text = "Incorrect!"
+//                statusLabel?.textColor = Color.red.darken2
+//            }
+//        }
         // Do any additional setup after loading the view.
     }
 

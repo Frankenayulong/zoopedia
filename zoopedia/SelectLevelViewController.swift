@@ -2,7 +2,7 @@
 //  SelectLevelViewController.swift
 //  zoopedia
 //
-//  Created by Kendrick on 6/10/17.
+//  Created by Nadya on 6/10/17.
 //  Copyright © 2017 Nadya. All rights reserved.
 //
 
@@ -145,88 +145,139 @@ class SelectLevelViewController: UIViewController {
         var answered_10 = false
         var answered_11 = false
         var answered_12 = false
+        
+        var answered_1_correct = false
+        var answered_2_correct = false
+        var answered_3_correct = false
+        var answered_4_correct = false
+        var answered_5_correct = false
+        var answered_6_correct = false
+        var answered_7_correct = false
+        var answered_8_correct = false
+        var answered_9_correct = false
+        var answered_10_correct = false
+        var answered_11_correct = false
+        var answered_12_correct = false
+        
         for animal in AppData.sharedInstance.animaldb{
             switch animal.id {
             case 1:
                 if animal.answered {
                     answered_1 = true
+                    if animal.correct_answer == animal.answer{
+                        answered_1_correct = true
+                    }
                     self.level1?.setImage(UIImage(named: "1"), for: .normal)
-                    self.level1?.isEnabled = false
+//                    self.level1?.isEnabled = false
                 }
                 break
             case 2:
                 if animal.answered {
                     answered_2 = true
+                    if animal.correct_answer == animal.answer{
+                        answered_2_correct = true
+                    }
                     self.level2?.setImage(UIImage(named: "2"), for: .normal)
-                    self.level2?.isEnabled = false
+//                    self.level2?.isEnabled = false
                 }
                 break
             case 3:
                 if animal.answered {
                     answered_3 = true
+                    if animal.correct_answer == animal.answer{
+                        answered_3_correct = true
+                    }
                     self.level3?.setImage(UIImage(named: "3"), for: .normal)
-                    self.level3?.isEnabled = false
+//                    self.level3?.isEnabled = false
                 }
                 break
             case 4:
                 if animal.answered {
                     answered_4 = true
+                    if animal.correct_answer == animal.answer{
+                        answered_4_correct = true
+                    }
                     self.level4?.setImage(UIImage(named: "4"), for: .normal)
-                    self.level4?.isEnabled = false
+//                    self.level4?.isEnabled = false
                 }
                 break
             case 5:
                 if animal.answered {
                     answered_5 = true
+                    if animal.correct_answer == animal.answer{
+                        answered_5_correct = true
+                    }
                     self.level5?.setImage(UIImage(named: "5"), for: .normal)
-                    self.level5?.isEnabled = false
+//                    self.level5?.isEnabled = false
                 }
                 break
             case 6:
                 if animal.answered {
                     answered_6 = true
+                    if animal.correct_answer == animal.answer{
+                        answered_6_correct = true
+                    }
                     self.level6?.setImage(UIImage(named: "6"), for: .normal)
-                    self.level6?.isEnabled = false
+//                    self.level6?.isEnabled = false
                 }
                 break
             case 7:
                 if animal.answered {
                     answered_7 = true
+                    if animal.correct_answer == animal.answer{
+                        answered_7_correct = true
+                    }
                     self.level7?.setImage(UIImage(named: "7"), for: .normal)
-                    self.level7?.isEnabled = false
+//                    self.level7?.isEnabled = false
                 }
                 break
             case 8:
                 if animal.answered {
                     answered_8 = true
+                    if animal.correct_answer == animal.answer{
+                        answered_8_correct = true
+                    }
                     self.level8?.setImage(UIImage(named: "8"), for: .normal)
-                    self.level8?.isEnabled = false
+//                    self.level8?.isEnabled = false
                 }
                 break
             case 9:
                 if animal.answered {
                     answered_9 = true
+                    if animal.correct_answer == animal.answer{
+                        answered_9_correct = true
+                    }
+                    self.level9?.setImage(UIImage(named: "9"), for: .normal)
                 }
                 break
             case 10:
                 if animal.answered {
                     answered_10 = true
+                    if animal.correct_answer == animal.answer{
+                        answered_10_correct = true
+                    }
                     self.level10?.setImage(UIImage(named: "10"), for: .normal)
-                    self.level10?.isEnabled = false
+//                    self.level10?.isEnabled = false
                 }
                 break
             case 11:
                 if animal.answered {
                     answered_11 = true
+                    if animal.correct_answer == animal.answer{
+                        answered_11_correct = true
+                    }
                     self.level11?.setImage(UIImage(named: "11"), for: .normal)
-                    self.level11?.isEnabled = false
+//                    self.level11?.isEnabled = false
                 }
                 break
             case 12:
                 if animal.answered {
                     answered_12 = true
+                    if animal.correct_answer == animal.answer{
+                        answered_12_correct = true
+                    }
                     self.level12?.setImage(UIImage(named: "12"), for: .normal)
-                    self.level12?.isEnabled = false
+//                    self.level12?.isEnabled = false
                 }
                 break
             default:
@@ -237,84 +288,84 @@ class SelectLevelViewController: UIViewController {
             switch animal.id {
             case 1:
                 self.level1?.isHidden = false
-                if !animal.answered {
+                if !animal.answered || 1==1 {
                     self.level1?.setImage(UIImage(named: "1"), for: .normal)
                     self.level1?.isEnabled = true
                 }
                 break
             case 2:
                 self.level2?.isHidden = false
-                if answered_1 && !animal.answered {
+                if answered_1 && answered_1_correct  {
                     self.level2?.setImage(UIImage(named: "2"), for: .normal)
                     self.level2?.isEnabled = true
                 }
                 break
             case 3:
                 self.level3?.isHidden = false
-                if answered_2 && !animal.answered {
+                if answered_2 && answered_2_correct {
                     self.level3?.setImage(UIImage(named: "3"), for: .normal)
                     self.level3?.isEnabled = true
                 }
                 break
             case 4:
                 self.level4?.isHidden = false
-                if answered_3 && !animal.answered {
+                if answered_3 && answered_3_correct {
                     self.level4?.setImage(UIImage(named: "4"), for: .normal)
                     self.level4?.isEnabled = true
                 }
                 break
             case 5:
                 self.level5?.isHidden = false
-                if answered_4 && !animal.answered {
+                if answered_4 && answered_4_correct {
                     self.level5?.setImage(UIImage(named: "5"), for: .normal)
                     self.level5?.isEnabled = true
                 }
                 break
             case 6:
                 self.level6?.isHidden = false
-                if answered_5 && !animal.answered {
+                if answered_5 && answered_5_correct{
                     self.level6?.setImage(UIImage(named: "6"), for: .normal)
                     self.level6?.isEnabled = true
                 }
                 break
             case 7:
                 self.level7?.isHidden = false
-                if answered_6 && !animal.answered {
+                if answered_6 && answered_6_correct{
                     self.level7?.setImage(UIImage(named: "7"), for: .normal)
                     self.level7?.isEnabled = true
                 }
                 break
             case 8:
                 self.level8?.isHidden = false
-                if answered_7 && !animal.answered {
+                if answered_7 && answered_7_correct {
                     self.level8?.setImage(UIImage(named: "8"), for: .normal)
                     self.level8?.isEnabled = true
                 }
                 break
             case 9:
                 self.level9?.isHidden = false
-                if answered_8 && !animal.answered {
+                if answered_8 && answered_8_correct{
                     self.level9?.setImage(UIImage(named: "9"), for: .normal)
                     self.level9?.isEnabled = true
                 }
                 break
             case 10:
                 self.level10?.isHidden = false
-                if answered_9 && !animal.answered {
+                if answered_9 && answered_9_correct{
                     self.level10?.setImage(UIImage(named: "10"), for: .normal)
                     self.level10?.isEnabled = true
                 }
                 break
             case 11:
                 self.level11?.isHidden = false
-                if answered_10 && !animal.answered {
+                if answered_10 && answered_10_correct {
                     self.level11?.setImage(UIImage(named: "11"), for: .normal)
                     self.level11?.isEnabled = true
                 }
                 break
             case 12:
                 self.level12?.isHidden = false
-                if answered_11 && !animal.answered {
+                if answered_11 && answered_11_correct {
                     self.level12?.setImage(UIImage(named: "12"), for: .normal)
                     self.level12?.isEnabled = true
                 }
